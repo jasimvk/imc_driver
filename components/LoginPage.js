@@ -11,11 +11,21 @@ const LoginPage = () => {
       />
       <TextInput
         style={styles.input}
-        placeholder="Username"
+        placeholder="User Id"
       />
       <TextInput
         style={styles.input}
         placeholder="Password"
+        secureTextEntry={true}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Vehicle Id"
+        secureTextEntry={true}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Current KM"
         secureTextEntry={true}
       />
       <TouchableOpacity
@@ -24,7 +34,7 @@ const LoginPage = () => {
           // TODO: Submit the form
         }}
       >
-        <Text style={styles.buttonText}>Submit</Text>
+        <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
     </View>
   );
@@ -51,7 +61,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   button: {
-    backgroundColor: '#4285F4',
+    backgroundColor: '#ff5f00',
     borderRadius: 5,
     padding: 10,
     marginTop: 20,
